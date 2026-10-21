@@ -1,0 +1,60 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile Java Programs",
+            "type": "process",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-Command",
+                "New-Item -ItemType Directory -Force -Path 'out' | Out-Null; & javac -encoding UTF-8 -d 'out' Antrian.java Karyawan.java Kendaraan.java Obat.java Pasien.java Produk.java Toko.java; exit $LASTEXITCODE"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\Praktikum"
+            },
+            "problemMatcher": "$javac",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run Java Program",
+            "type": "process",
+            "command": "java",
+            "args": [
+                "-cp",
+                "out",
+                "${input:javaMainClass}"
+            ],
+            "dependsOn": "Compile Java Programs",
+            "dependsOrder": "sequence",
+            "options": {
+                "cwd": "${workspaceFolder}\\Praktikum"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "javaMainClass",
+            "type": "pickString",
+            "description": "Pilih program Java yang ingin dijalankan",
+            "options": [
+                "Antrian",
+                "Karyawan",
+                "Kendaraan",
+                "Obat",
+                "Pasien",
+                "Produk",
+                "Toko"
+            ]
+        }
+    ]
+}

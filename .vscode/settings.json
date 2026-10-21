@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "Praktikum"
+    ],
+    "java.project.outputPath": "Praktikum/out",
+    "java.configuration.updateBuildConfiguration": "automatic"
+}

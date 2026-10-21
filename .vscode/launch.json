@@ -1,0 +1,82 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug Antrian",
+            "request": "launch",
+            "mainClass": "Antrian",
+            "classPaths": [
+                "${workspaceFolder}\\Praktikum\\out"
+            ],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Compile Java Programs"
+        },
+        {
+            "type": "java",
+            "name": "Debug Karyawan",
+            "request": "launch",
+            "mainClass": "Karyawan",
+            "classPaths": [
+                "${workspaceFolder}\\Praktikum\\out"
+            ],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Compile Java Programs"
+        },
+        {
+            "type": "java",
+            "name": "Debug Kendaraan",
+            "request": "launch",
+            "mainClass": "Kendaraan",
+            "classPaths": [
+                "${workspaceFolder}\\Praktikum\\out"
+            ],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Compile Java Programs"
+        },
+        {
+            "type": "java",
+            "name": "Debug Obat",
+            "request": "launch",
+            "mainClass": "Obat",
+            "classPaths": [
+                "${workspaceFolder}\\Praktikum\\out"
+            ],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Compile Java Programs"
+        },
+        {
+            "type": "java",
+            "name": "Debug Pasien",
+            "request": "launch",
+            "mainClass": "Pasien",
+            "classPaths": [
+                "${workspaceFolder}\\Praktikum\\out"
+            ],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Compile Java Programs"
+        },
+        {
+            "type": "java",
+            "name": "Debug Produk",
+            "request": "launch",
+            "mainClass": "Produk",
+            "classPaths": [
+                "${workspaceFolder}\\Praktikum\\out"
+            ],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Compile Java Programs"
+        },
+        {
+            "type": "java",
+            "name": "Debug Toko",
+            "request": "launch",
+            "mainClass": "Toko",
+            "classPaths": [
+                "${workspaceFolder}\\Praktikum\\out"
+            ],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Compile Java Programs"
+        }
+    ]
+}
